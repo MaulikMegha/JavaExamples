@@ -33,9 +33,6 @@ public class MainApp {
         list.stream().forEach(System.out::println);
 
         // Now java 8 has come to rescue, with the streams concept we can achieve the result.
-        // Employee.stream().sorted(Comparator.comparing(Employe::getName).thenComparing(Emloye::getAge));﻿
-
-
-
+        list.stream().sorted(Comparator.comparing(Student::getRollNumber).thenComparing(Student::getfName));
     }
 }
