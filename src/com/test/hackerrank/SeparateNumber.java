@@ -2,9 +2,9 @@ package com.test.hackerrank;
 
 import java.util.Scanner;
 
-public class SolutionC {
+public class SeparateNumber {
 
-    // Complete the separateNumbers function below.
+    // separateNumbers function below.
     static void separateNumbers(String s) {
         int sLength = s.length();
         long smallest = -1;
@@ -22,24 +22,8 @@ public class SolutionC {
                 break;
             }
         }
+
         System.out.println(isSequence ? "YES " + smallest : "NO");
-       /* int index = 1;
-        if(sLength > 1){
-            for(int i = 0; i < sLength-1; ){ // 1 2 3 4
-                int x = Integer.parseInt(s.substring(i,i+index));
-                int y = Integer.parseInt(s.substring(i+1,i+1+index));
-                if(x+1 == y) {
-                    i++;
-                } else {
-                    index += 1;
-                }
-                if(i >= sLength-1) {
-                    System.out.println("YES");
-                }
-            }
-        } else {
-            System.out.println("NO");
-        }*/
     }
 
     private static final Scanner scanner = new Scanner(System.in);
