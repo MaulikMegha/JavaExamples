@@ -41,3 +41,18 @@ public class SeparateNumber {
         scanner.close();
     }
 }
+
+/* Input :
+4
+99910001001
+7891011
+9899100
+999100010001
+*/
+
+/* Output ;
+YES 999
+YES 7
+YES 98
+NO
+*/
