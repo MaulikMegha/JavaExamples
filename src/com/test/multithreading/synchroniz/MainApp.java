@@ -5,6 +5,8 @@ public class MainApp {
 
     private static int count = 0;
 
+    // due to syncronized keyword, only one thread can access this method..
+    // and we can ignore erroneous and unforeseen result.
     public synchronized void increment(){
         count++;
     }

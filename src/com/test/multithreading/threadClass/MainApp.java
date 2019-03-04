@@ -1,5 +1,7 @@
 package com.test.multithreading.threadClass;
 
+// In this example, create a thread using extends Thread class.
+// check the Runner class, how to extends and override run method.
 public class MainApp {
     public static void main(String args[]) throws InterruptedException{
         Thread t1 = new Runner();
