@@ -1,9 +1,12 @@
 package com.test.exception.propagation;
 
 public class MainApp2 {
-    void third() {
+    void third(){
         //checked exception
         // throw new java.io.IOException("device error");
+
+        //unchecked exception
+        // throw new java.lang.ArithmeticException("bad value");
     }
 
     void second() {
