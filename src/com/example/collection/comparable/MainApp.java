@@ -28,10 +28,6 @@ public class MainApp {
         list.stream().forEach(System.out::println);
 
 
-        System.out.println("** after custom shoring .....");
-        Collections.sort(list, new SortByLname());
-        list.stream().forEach(System.out::println);
-
         // Now java 8 has come to rescue, with the streams concept we can achieve the result.
         list.stream().sorted(Comparator.comparing(Student::getRollNumber).thenComparing(Student::getfName));
     }
