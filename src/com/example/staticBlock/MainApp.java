@@ -1,12 +1,25 @@
 package com.example.staticBlock;
 
 public class MainApp {
+    public void nonStatic(){
+        System.out.println("Call this method through obj");
+    }
     public static void main(String args[]) {
         Test test = new Test(10);
 
         System.out.println(test.x);
         System.out.println(test.y);
         System.out.println(test.z);
+
+        MainApp obj = new MainApp();
+        obj.nonStatic();
+        test(obj);
+    }
+
+    public static void test(MainApp obj){
+        System.out.println("this is a test method");
+        //now call non-static method
+        obj.nonStatic();
     }
 }
 

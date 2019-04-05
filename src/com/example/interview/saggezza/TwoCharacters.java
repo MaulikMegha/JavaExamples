@@ -1,4 +1,4 @@
-package com.example.hackerrank.saggezza;
+package com.example.interview.saggezza;
 
 import java.util.HashSet;
 import java.util.Set;
