@@ -13,14 +13,14 @@ public class MainApp {
         List<Meeting> listOfMeeting = new ArrayList<>();
         listOfMeeting.add(new Meeting("meeting-1", 5));
         listOfMeeting.add(new Meeting("meeting-2", 3));
-        listOfMeeting.add(new Meeting("meeting-3", 5));
+        listOfMeeting.add(new Meeting("meeting-3", 4));
         listOfMeeting.add(new Meeting("meeting-4", 0.5f));
         listOfMeeting.add(new Meeting("meeting-5", 0.5f));
         listOfMeeting.add(new Meeting("meeting-6", 2));
 
         // Collections.sort(listOfMeeting, new SortMeetingHours());
 
-        //java8 custom sort on POJO on Hours.
+        //java8 custom sort on Meeting-Hours.
         listOfMeeting.sort(Comparator.comparing(Meeting::getHours));
 
         List<String> resultList = new ArrayList<>();
