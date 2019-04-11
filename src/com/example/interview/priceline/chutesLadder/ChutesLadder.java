@@ -1,11 +1,7 @@
-package com.example.interview.priceline;
+package com.example.interview.priceline.chutesLadder;
 
 import java.util.List;
 import java.util.Random;
-
-import static com.example.interview.priceline.ChutesLadderBoard.chutesMap;
-import static com.example.interview.priceline.ChutesLadderBoard.ladderMap;
-import static com.example.interview.priceline.ChutesLadderBoard.winingScore;
 
 public class ChutesLadder {
 
@@ -24,7 +20,7 @@ public class ChutesLadder {
         int playerCount = playerList.size();
         for(int i = 0; i < playerCount; i++){
             Player player = playerList.get(i);
-            if(player.getScore() >= winingScore){
+            if(player.getScore() >= ChutesLadderBoard.winingScore){
                 System.out.println("The winner is "+player.getName());
                 return false;
             }
@@ -45,11 +41,11 @@ public class ChutesLadder {
         int currentScore = previousScore + diceValue;
         System.out.print(currentScore);
 
-        if(chutesMap.get(currentScore)!= null){
-            currentScore = chutesMap.get(currentScore);
+        if(ChutesLadderBoard.chutesMap.get(currentScore)!= null){
+            currentScore = ChutesLadderBoard.chutesMap.get(currentScore);
             System.out.print(" --CHUTE--> "+currentScore);
-        } else if (ladderMap.get(currentScore)!= null){
-            currentScore = ladderMap.get(currentScore);
+        } else if (ChutesLadderBoard.ladderMap.get(currentScore)!= null){
+            currentScore = ChutesLadderBoard.ladderMap.get(currentScore);
             System.out.print(" --LADDER--> "+currentScore);
         }
         System.out.println("");

@@ -1,4 +1,4 @@
-package com.example.interview.priceline;
+package com.example.interview.priceline.chutesLadder;
 
 public class Player {
     private String name;

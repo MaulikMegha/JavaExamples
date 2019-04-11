@@ -1,4 +1,4 @@
-package com.example.interview.priceline;
+package com.example.interview.priceline.chutesLadder;
 
 import java.util.HashMap;
 import java.util.Map;

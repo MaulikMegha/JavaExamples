@@ -1,4 +1,4 @@
-package com.example.interview.priceline;
+package com.example.interview.priceline.chutesLadder;
 
 import org.junit.Assert;
 import org.junit.Test;

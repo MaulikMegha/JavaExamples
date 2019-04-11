@@ -1,4 +1,4 @@
-package com.example.interview.priceline;
+package com.example.interview.priceline.chutesLadder;
 
 import java.util.ArrayList;
 import java.util.List;
