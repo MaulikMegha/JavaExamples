@@ -13,8 +13,9 @@ public class ReverseNumber {
         while (input != 0){
             revers = (revers*10)+(input%10);
             input = input / 10;
+           // System.out.println(revers);
         }
-        System.out.println(revers);
+       System.out.println(revers);
 
     }
 }
