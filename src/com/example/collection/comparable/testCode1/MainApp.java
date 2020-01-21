@@ -10,20 +10,19 @@ public class MainApp {
         list.add(new Student(104, "rucha", "megha"));
         list.add(new Student(105, "tarun", "patel"));
         list.add(new Student(101, "maulik", "megha"));
-        // set.add(new Student(101, "maulik", "megha")); // this doesn't work, not implement equals and hashcode
         list.add(new Student(102, "kamini", "patel"));
         list.add(new Student(103, "bhavin", "megha"));
 
-        System.out.println("** before shoring .....");
+        System.out.println("** before sorting .....");
         list.stream().forEach(System.out::println);
 
 
-        System.out.println("** after shoring .....");
+        System.out.println("** after sorting .....");
         Collections.sort(list);
         list.stream().forEach(System.out::println);
 
 
-        System.out.println("** after shoring reverse .....");
+        System.out.println("** after sorting reverse .....");
         Collections.sort(list, Collections.reverseOrder());
         list.stream().forEach(System.out::println);
 
