@@ -1,4 +1,4 @@
-package com.example.collection.comparable;
+package com.example.collection.comparable.testCode1;
 
 public class Student implements Comparable<Student>{
     private int rollNumber;
