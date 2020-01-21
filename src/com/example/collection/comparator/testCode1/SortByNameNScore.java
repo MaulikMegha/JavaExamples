@@ -1,4 +1,5 @@
-package com.example.collection.comparator;
+package com.example.collection.comparator.testCode1;
+
 import java.util.Comparator;
 
 public class SortByNameNScore implements Comparator<Team> {
