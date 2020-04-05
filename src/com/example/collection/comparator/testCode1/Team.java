@@ -17,13 +17,13 @@ public class Team {
         return this.score;
     }
 
+    // unnecessary for equals and hashCode, we have list of Team
     public boolean equals(Object obj){
       if(obj != null && obj instanceof Team){
          if(this.name.equalsIgnoreCase(((Team) obj).name)){
              return true;
          }
       }
-
      return false;
     }
 
