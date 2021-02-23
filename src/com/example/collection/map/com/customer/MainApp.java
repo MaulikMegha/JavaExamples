@@ -1,4 +1,6 @@
-package com.example.collection.map;
+package com.example.collection.map.com.customer;
+
+import com.example.collection.map.com.customer.Customer;
 
 import java.util.*;
 
