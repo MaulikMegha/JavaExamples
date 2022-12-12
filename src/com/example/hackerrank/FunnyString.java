@@ -10,9 +10,6 @@ public class FunnyString {
         int length = s.length();
         boolean isFunnyString = true;
 
-        List<Integer> list = new ArrayList<>();
-        List<Integer> list2 = new ArrayList<>();
-
         for(int i= 0, j = length-1; i < length-1 ; i++, j--){
             int value1 = s.charAt(i);
             int value2 = s.charAt(i+1);

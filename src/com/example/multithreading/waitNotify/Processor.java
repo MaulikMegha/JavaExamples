@@ -22,7 +22,7 @@ public class Processor {
             sc.nextLine();
             System.out.println("return key pressed");
             notify();
-            System.out.println("resume after 2 second..");
+            System.out.println("resume after 2 testCode2..");
             Thread.sleep(2000);
         }
     }

@@ -13,6 +13,7 @@ public class DecodeMessageFB {
             map.put(i, (char) charInt);
             charInt++;
         }
+        //display the map
         for (Map.Entry<Integer, Character> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " : "+entry.getValue());
         }

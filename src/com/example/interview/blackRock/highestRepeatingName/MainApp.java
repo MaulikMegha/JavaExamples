@@ -34,7 +34,7 @@ public class MainApp {
         System.out.println(set.first());*/
 
 
-        // this is the second way using Java 8 : you can find max value - Key & Value
+        // this is the testCode2 way using Java 8 : you can find max value - Key & Value
         String key = Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey();
         Integer maxCount =  Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getValue();
         // System.out.println(key + " : "+maxCount);

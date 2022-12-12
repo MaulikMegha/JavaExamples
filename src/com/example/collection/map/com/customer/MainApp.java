@@ -40,6 +40,9 @@ public class MainApp {
             }
         });
 
+        System.out.println("************ Display customer map *********");
+        customerMap.forEach((k,v) -> System.out.println(k +" : "+v));
+
         System.out.println("************ Display first time buyer *********");
         customerMap.forEach((k, v) -> {
             if(v.size() == 1){

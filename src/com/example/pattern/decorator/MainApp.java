@@ -16,6 +16,5 @@ public class MainApp {
         System.out.println("*** Luxury Sport Car ***");
         Car luxurySportCar = new LuxuryCar(new SportCar(new BasicCar()));
         luxurySportCar.carData();
-
     }
 }

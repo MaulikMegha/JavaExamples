@@ -1,6 +1,8 @@
 package com.example.collection.set;
 
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class Mainapp {
 
@@ -21,5 +23,8 @@ public class Mainapp {
         String s = "MAULIK";
         System.out.println(mySet.contains("MAULIK"));
         System.out.println(mySet.stream().anyMatch(s::equalsIgnoreCase));
+
+
+
     }
 }

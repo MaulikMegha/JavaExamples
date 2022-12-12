@@ -10,7 +10,6 @@ public class A {
         System.out.println("hi test2 from A");
     }
 
-
     public void test3(){
         System.out.println("hi test3 from A");
     }

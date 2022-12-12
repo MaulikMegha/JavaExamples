@@ -39,8 +39,10 @@ public class ArrayListNLinklist {
         numberList.add(1);
         numberList.add(2);
         numberList.add(3);
-        numberList.add(2);
-        numberList.add(1);
+        numberList.add(4);
+        //numberList.add(2);
+        //numberList.add(1);
+        numberList.add(0,0);
 
         for(Integer number: numberList){
             System.out.println(number);

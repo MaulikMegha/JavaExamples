@@ -10,5 +10,9 @@ public class MainApp {
         System.out.println(context.executeStrategy(20,10));
 
         System.out.println(new Context(new OperationMultiply()).executeStrategy(20,10));
+
+        Strategy strategy =  new OperationAdd();
+        int resultSum = strategy.doOperation(6,4);
+        System.out.println(resultSum);
     }
 }

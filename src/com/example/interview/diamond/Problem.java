@@ -29,9 +29,7 @@ class C extends A{
 }
 
 // Class cannot extend multiple classes
-/*
-class D extends B,C {
+/*class D extends B,C {
 
     // you are getting both display B and C ..
-}
-*/
+}*/

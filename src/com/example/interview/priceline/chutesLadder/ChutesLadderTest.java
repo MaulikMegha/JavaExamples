@@ -1,5 +1,6 @@
 package com.example.interview.priceline.chutesLadder;
 
+/*
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,3 +13,4 @@ public class ChutesLadderTest {
 
     }
 }
+*/

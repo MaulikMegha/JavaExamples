@@ -17,7 +17,7 @@ public class MainApp {
     }
 
     public static void test(MainApp obj){
-        System.out.println("this is a test method");
+        System.out.println("this is a customer method");
         //now call non-static method
         obj.nonStatic();
     }

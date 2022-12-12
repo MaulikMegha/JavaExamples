@@ -50,6 +50,12 @@ public class MainApp {
                 .forEach(o -> {
                     System.out.println(o.getKey() + " : "+o.getValue());
                 });
+
+        Map<String, String> errors = new HashMap<>();
+        errors.put("DUPLICATE_EMAIL","Customer with the supplied email address already exists.");
+        errors.put("EMAIL_BANNED","Email address not allowed, please use another email address.");
+        errors.put("INVALID_DOMAIN","' is not a valid domain");
+
     }
 
 }

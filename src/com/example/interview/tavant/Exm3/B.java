@@ -7,12 +7,10 @@ public class B extends A {
         System.out.println("hello test from B");
     }
 
-
     // this can be private or protected or public
     protected void test2(){
         System.out.println("hello test2 from B");
     }
-
 
     // only public allow
     public void test3(){

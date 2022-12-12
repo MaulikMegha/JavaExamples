@@ -15,7 +15,7 @@ public class DuplicateNumber {
         int duplicateNumber = sum - sumNumber;
         System.out.println(duplicateNumber);
 
-        // second approach using collection
+        // testCode2 approach using collection
         Set<Integer> set = new HashSet<>();
         int n = input.length;
         for(int i = 0; i < n; i++){
