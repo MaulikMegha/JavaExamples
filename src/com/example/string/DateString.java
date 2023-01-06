@@ -18,11 +18,16 @@ import java.util.regex.Pattern;
 public class DateString {
     public static void  main(String args[]) {
 
-        SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         //SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        Date myDate = null;
+        Date myDate1 = null;
+        Date myDate2 = null;
+        String datePattern = "\\d{4}-\\d{2}-\\d{2}";
+        String date1 = "2022-12-10";
+        String date2 = "12-10-2022";
         try {
-            myDate = format.parse("20201210");
+            myDate1 = date1.matches(datePattern) ? format.parse(date1) : null;
+            myDate2 = date2.matches(datePattern) ? format.parse(date2) : null;
             /*Calendar cal = Calendar.getInstance();
             cal.setTime(myDate);
             cal.add(Calendar.DATE, 10);
@@ -30,7 +35,9 @@ public class DateString {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        System.out.println("date : "+myDate);
+        System.out.println("date 1 : "+myDate1);
+        System.out.println("date 2 : "+myDate2);
+/*
 
         LocalDateTime today = LocalDateTime.now();     //Today
         LocalDateTime tomorrow = today.plusDays(10);     //Plus 1 day
@@ -54,8 +61,11 @@ public class DateString {
         System.out.println();
         System.out.println();
 
-        /*2020-10-21T16:04:57+0000*/
-        /*SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+        */
+/*2020-10-21T16:04:57+0000*//*
+
+        */
+/*SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
         SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         Date date = null;
         try {
@@ -64,7 +74,8 @@ public class DateString {
             e.printStackTrace();
         }
         String formattedDate = outputFormat.format(date);
-        System.out.println(formattedDate);*/ // prints 2020-10-21 12:04:57.000
+        System.out.println(formattedDate);*//*
+ // prints 2020-10-21 12:04:57.000
 
         String emailID = "maulik.megha+11test@consumer.org";
         String encodedEmail = encodeValue(emailID);
@@ -103,6 +114,7 @@ public class DateString {
         Long newDate = 1664284815294L;
         System.out.println("newDate : "+new Timestamp(newDate));
 
+*/
 
 
     }
